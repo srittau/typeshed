@@ -1,4 +1,5 @@
 import sys
+from abc import ABC
 from types import TracebackType
 from typing import ClassVar, Literal
 from typing_extensions import Self
@@ -20,7 +21,7 @@ class ExceptionSaver:
 
 def run_setup(setup_script, args): ...
 
-class AbstractSandbox:
+class AbstractSandbox(ABC):
     def __enter__(self) -> None: ...
     def __exit__(
         self, exc_type: type[BaseException] | None, exc_value: BaseException | None, traceback: TracebackType | None

@@ -1,5 +1,5 @@
 from _typeshed import Incomplete, StrPath
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 from collections.abc import Iterable, Mapping, Sequence
 from typing import Any, TypeVar, overload
 
@@ -73,7 +73,7 @@ def setup(
     **attrs,
 ) -> Distribution: ...
 
-class Command(_Command):
+class Command(_Command, ABC):
     command_consumes_arguments: bool
     distribution: Distribution
     # Any: Dynamic command subclass attributes
