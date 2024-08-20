@@ -5,7 +5,6 @@ import types
 import zipimport
 from _typeshed import BytesPath, Incomplete, StrOrBytesPath, StrPath, Unused
 from _typeshed.importlib import LoaderProtocol
-from abc import ABC
 from collections.abc import Callable, Generator, Iterable, Iterator, Sequence
 from io import BytesIO
 from itertools import chain
@@ -320,7 +319,7 @@ class IMetadataProvider(Protocol):
     def metadata_listdir(self, name: str) -> list[str]: ...
     def run_script(self, script_name: str, namespace: dict[str, Any]) -> None: ...
 
-class ResolutionError(Exception, ABC): ...
+class ResolutionError(Exception): ...
 
 class VersionConflict(ResolutionError):
     def __init__(self, dist: Distribution, req: Requirement, /, *args: object) -> None: ...

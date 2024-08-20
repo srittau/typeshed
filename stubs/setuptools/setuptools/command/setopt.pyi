@@ -1,5 +1,5 @@
 from _typeshed import Incomplete
-from abc import ABC, abstractmethod
+from abc import abstractmethod
 from typing import ClassVar
 
 from .. import Command
@@ -9,7 +9,7 @@ __all__ = ["config_file", "edit_config", "option_base", "setopt"]
 def config_file(kind: str = "local"): ...
 def edit_config(filename, settings, dry_run: bool = False) -> None: ...
 
-class option_base(Command, ABC):
+class option_base(Command):
     user_options: ClassVar[list[tuple[str, str, str]]]
     boolean_options: ClassVar[list[str]]
     global_config: Incomplete
