@@ -54,7 +54,7 @@ from _operator import (
 )
 from _typeshed import SupportsGetItem
 from typing import Any, Generic, ParamSpec, TypeVar, final, overload
-from typing_extensions import Self, TypeVarTuple, Unpack
+from typing_extensions import TypeVarTuple, Unpack
 
 _T = TypeVar("_T")
 _T_co = TypeVar("_T_co", covariant=True)
