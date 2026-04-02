@@ -61,7 +61,7 @@ _T_co = TypeVar("_T_co", covariant=True)
 _T1 = TypeVar("_T1")
 _T2 = TypeVar("_T2")
 _Ts = TypeVarTuple("_Ts")
-_P = ParamSpec("_P", default=[])
+_P = ParamSpec("_P", default=...)
 _R = TypeVar("_R", default=Any)
 
 __all__ = [
@@ -219,7 +219,7 @@ class itemgetter(Generic[_T_co]):
 
 @final
 class methodcaller(Generic[_P, _R]):
-    def __new__(cls, name: str, /, *args: _P.args, **kwargs: _P.kwargs) -> Self: ...
+    def __new__(cls, name: str, /, *args: _P.args, **kwargs: _P.kwargs) -> methodcaller[_P, Any]: ...
     # obj needs to have the named method with the correct signature.
     # Unfortunately, we can't check that statically, so we need to use Any.
     def __call__(self, obj: Any) -> _R: ...
