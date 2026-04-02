@@ -61,7 +61,7 @@ _T_co = TypeVar("_T_co", covariant=True)
 _T1 = TypeVar("_T1")
 _T2 = TypeVar("_T2")
 _Ts = TypeVarTuple("_Ts")
-_P = ParamSpec("_P", default=...)
+_P = ParamSpec("_P", default=[])
 _R = TypeVar("_R", default=Any)
 
 __all__ = [
