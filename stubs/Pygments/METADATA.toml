@@ -5,4 +5,3 @@ partial_stub = true
 
 [tool.stubtest]
 stubtest_dependencies = ["sphinx"]
-ignore_missing_stub = true
