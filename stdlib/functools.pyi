@@ -205,7 +205,7 @@ class _SingleDispatchCallable(Generic[_P, _T]):
     # @fun.register(complex)
     # def _(arg, verbose=False): ...
     @overload
-    def register(
+    def register(  # type: ignore[overload-overlap]
         self, cls: type[_S], func: None = None
     ) -> Callable[[Callable[Concatenate[_S, _P], _T]], Callable[Concatenate[_S, _P], _T]]: ...
     # @fun.register
@@ -239,7 +239,7 @@ class singledispatchmethod(Generic[_P, _T]):
         ) -> Callable[[Callable[Concatenate[_S, _P], _T]], Callable[Concatenate[_S, _P], _T]]: ...
 
     @overload
-    def register(
+    def register(  # type: ignore[overload-overlap]
         self, cls: type[_S], method: None = None
     ) -> Callable[[Callable[Concatenate[_S, _P], _T]], Callable[Concatenate[_S, _P], _T]]: ...
     @overload
