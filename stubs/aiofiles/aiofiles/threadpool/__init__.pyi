@@ -99,7 +99,7 @@ def open(
 ) -> AiofilesContextManager[_UnknownAsyncBinaryIO]: ...
 
 stdin: AsyncTextIndirectIOWrapper
-stdout: AsyncTextIndirectIOWrapper  # type: ignore  # ???
+stdout: AsyncTextIndirectIOWrapper
 stderr: AsyncTextIndirectIOWrapper
 stdin_bytes: AsyncIndirectBufferedIOBase
 stdout_bytes: AsyncIndirectBufferedIOBase

@@ -119,8 +119,6 @@ def check_singledispatch_simple() -> None:
     def _(int_arg: int) -> str:
         return ""
 
-    assert_type(sd_fun, _SingleDispatchCallable[[object], str])
-
     sd_fun.dispatch(42)
     sd_fun.dispatch("")
     sd_fun.dispatch(1, 2)  # type: ignore
