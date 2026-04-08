@@ -26,7 +26,7 @@ __all__ = [
 _T = TypeVar("_T")
 _T_co = TypeVar("_T_co", covariant=True)
 _S = TypeVar("_S")
-_P = ParamSpec("_P", default=Any)
+_P = ParamSpec("_P", default=...)
 _R = TypeVar("_R", default=Any)
 _PWrapped = ParamSpec("_PWrapped")
 _RWrapped = TypeVar("_RWrapped")
