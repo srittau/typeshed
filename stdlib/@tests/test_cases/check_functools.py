@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from functools import _SingleDispatchCallable, cache, cached_property, singledispatch, wraps
+from functools import cache, cached_property, singledispatch, wraps
 from typing import Callable, TypeVar
 from typing_extensions import ParamSpec, assert_type
 
