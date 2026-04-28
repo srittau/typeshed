@@ -908,10 +908,7 @@ async def suggest_typeshed_obsolete(obsolete: Obsolete, session: aiohttp.ClientS
         branch_name = f"{BRANCH_PREFIX}/{normalize(obsolete.distribution)}"
         subprocess.check_call(["git", "checkout", "-B", branch_name, "origin/main"])
         obsolete_t = cast(dict[str, object], tomlkit.inline_table())
-        obsolete_t.update({
-            "version": obsolete.obsolete_since_version,
-            "date": obsolete.obsolete_since_date.date().isoformat(),
-        })
+        obsolete_t.update({"version": obsolete.obsolete_since_version, "date": obsolete.obsolete_since_date.date().isoformat()})
         update_metadata(obsolete.distribution, obsolete_since=obsolete_t)
         body = "\n".join(f"{k}: {v}" for k, v in obsolete.links.items())
         subprocess.check_call(["git", "commit", "--all", "-m", f"{title}\n\n{body}"])
