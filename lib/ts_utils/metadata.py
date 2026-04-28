@@ -432,4 +432,5 @@ def get_recursive_requirements(package_name: str) -> PackageDependencies:
         external.update(reqs.external_pkgs)
     return PackageDependencies(tuple(typeshed), tuple(external))
 
+
 # Test
