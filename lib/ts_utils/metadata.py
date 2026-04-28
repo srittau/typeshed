@@ -294,9 +294,10 @@ def read_metadata(distribution: str) -> StubMetadata:
 
     obsolete_since = data.get("obsolete-since")
     assert isinstance(obsolete_since, (dict, type(None)))
-    if obsolete_since:
-        obsolete_since_version = obsolete_since.get("version")
-        obsolete_since_date = obsolete_since.get("date")
+    if obsolete_since is not None:
+        obsolete_table: dict[str, object] = obsolete_since
+        obsolete_since_version = obsolete_table.get("version")
+        obsolete_since_date = obsolete_table.get("date")
         assert isinstance(obsolete_since_version, str)
         assert isinstance(obsolete_since_date, str)
         since_date = datetime.date.fromisoformat(obsolete_since_date)
