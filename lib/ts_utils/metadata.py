@@ -241,7 +241,7 @@ def read_metadata(distribution: str) -> StubMetadata:
         with metadata_path(distribution).open("rb") as f:
             # This cast is necessary for pyright to understand that the
             # variable is a dict with object values. Just using
-            # `data: dict[str, object] = tomllib.load(f)` doesn't work because
+            # `data: dict[str, object] = tomlkit.load(f)` doesn't work because
             # pyright still infers TOMLDocument which derives from
             # dict[Unknown, Unknown].
             data = cast(dict[str, object], tomlkit.load(f))
@@ -364,7 +364,7 @@ def update_metadata(distribution: str, **new_values: object) -> dict[str, object
         with path.open("rb") as f:
             # This cast is necessary for pyright to understand that the
             # variable is a dict with object values. Just using
-            # `data: dict[str, object] = tomllib.load(f)` doesn't work because
+            # `data: dict[str, object] = tomlkit.load(f)` doesn't work because
             # pyright still infers TOMLDocument which derives from
             # dict[Unknown, Unknown].
             data = cast(dict[str, object], tomlkit.load(f))
