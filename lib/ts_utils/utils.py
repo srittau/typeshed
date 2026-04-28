@@ -236,7 +236,7 @@ def allowlists(distribution_name: str) -> list[str]:
 
 
 # Re-exposing as a public name to avoid many pyright reportPrivateUsage
-TemporaryFileWrapper = tempfile._TemporaryFileWrapper
+TemporaryFileWrapper = tempfile._TemporaryFileWrapper  # pyright: ignore[reportPrivateUsage]
 
 # We need to work around a limitation of tempfile.NamedTemporaryFile on Windows
 # For details, see https://github.com/python/typeshed/pull/13620#discussion_r1990185997
