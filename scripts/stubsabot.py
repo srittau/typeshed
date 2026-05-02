@@ -25,8 +25,6 @@ from pathlib import Path
 from typing import Annotated, Any, ClassVar, Literal, NamedTuple, TypedDict, TypeVar, cast
 from typing_extensions import Self, TypeAlias
 
-import tomlkit
-
 if sys.version_info >= (3, 11):
     import tomllib
 else:
@@ -34,6 +32,7 @@ else:
 
 import aiohttp
 import packaging.version
+import tomlkit
 from packaging.specifiers import Specifier
 from termcolor import colored
 
