@@ -31,7 +31,6 @@ class Config:
         self, exc_type: type[BaseException] | None, exc_value: BaseException | None, traceback: TracebackType | None
     ) -> None: ...
 
-
 class NetworkXConfig(Config):
     backend_priority: list[str]
     backends: Config
