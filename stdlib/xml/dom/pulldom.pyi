@@ -3,7 +3,7 @@ from _typeshed import Incomplete, Unused
 from collections.abc import MutableSequence, Sequence
 from typing import Final, Literal, NoReturn
 from typing_extensions import Self
-from xml.dom.minidom import Comment, Document, DOMImplementation, Element, ProcessingInstruction, Text, TypeAlias
+from xml.dom.minidom import Document, Element, TypeAlias
 from xml.sax import _SupportsReadClose
 from xml.sax.handler import ContentHandler
 from xml.sax.xmlreader import AttributesImpl, AttributesNSImpl, Locator, XMLReader
@@ -17,19 +17,10 @@ PROCESSING_INSTRUCTION: Final = "PROCESSING_INSTRUCTION"
 IGNORABLE_WHITESPACE: Final = "IGNORABLE_WHITESPACE"
 CHARACTERS: Final = "CHARACTERS"
 
-_NSName: TypeAlias = tuple[str | None, str]
-_DocumentFactory: TypeAlias = DOMImplementation | None
+_NSName: TypeAlias = ...
+_DocumentFactory: TypeAlias = ...
 
-_Event: TypeAlias = (
-    tuple[Literal["START_ELEMENT"], Element]
-    | tuple[Literal["END_ELEMENT"], Element]
-    | tuple[Literal["COMMENT"], Comment]
-    | tuple[Literal["START_DOCUMENT"], Document]
-    | tuple[Literal["END_DOCUMENT"], Document]
-    | tuple[Literal["PROCESSING_INSTRUCTION"], ProcessingInstruction]
-    | tuple[Literal["IGNORABLE_WHITESPACE"], Text]
-    | tuple[Literal["CHARACTERS"], Text]
-)
+_Event: TypeAlias = ...
 
 class PullDOM(ContentHandler):
     document: Document | None
