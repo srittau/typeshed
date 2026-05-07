@@ -8,8 +8,7 @@ from _asyncio import (
     _unregister_task as _unregister_task,
 )
 from collections.abc import AsyncIterator, Awaitable, Coroutine, Generator, Iterable, Iterator
-from typing import Any, Final, Literal, Protocol, TypeVar, overload, type_check_only
-from typing_extensions import TypeAlias
+from typing import Any, Final, Literal, Protocol, TypeAlias, TypeVar, overload, type_check_only
 
 from . import _CoroutineLike
 from .events import AbstractEventLoop

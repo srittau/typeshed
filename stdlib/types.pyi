@@ -16,8 +16,8 @@ from collections.abc import (
     ValuesView,
 )
 from importlib.machinery import ModuleSpec
-from typing import Any, ClassVar, Literal, TypeVar, final, overload
-from typing_extensions import ParamSpec, Self, TypeAliasType, TypeVarTuple, deprecated, disjoint_base
+from typing import Any, ClassVar, Literal, ParamSpec, TypeVar, final, overload
+from typing_extensions import Self, TypeAliasType, TypeVarTuple, deprecated, disjoint_base
 
 if sys.version_info >= (3, 14):
     from _typeshed import AnnotateFunc

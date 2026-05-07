@@ -2,8 +2,8 @@ import csv
 import sys
 from _typeshed import SupportsWrite
 from collections.abc import Iterable
-from typing import Any, Final, Literal, type_check_only
-from typing_extensions import Self, TypeAlias, disjoint_base
+from typing import Any, Final, Literal, TypeAlias, type_check_only
+from typing_extensions import Self, disjoint_base
 
 __version__: Final[str]
 

@@ -2,8 +2,7 @@ import codecs
 import sys
 from _typeshed import ReadableBuffer
 from collections.abc import Callable
-from typing import Literal, final, overload, type_check_only
-from typing_extensions import TypeAlias
+from typing import Literal, TypeAlias, final, overload, type_check_only
 
 # This type is not exposed; it is defined in unicodeobject.c
 # At runtime it calls itself builtins.EncodingMap

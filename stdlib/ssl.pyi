@@ -27,8 +27,8 @@ from _ssl import (
 )
 from _typeshed import ReadableBuffer, StrOrBytesPath, WriteableBuffer
 from collections.abc import Callable, Iterable
-from typing import Any, Final, Literal, NamedTuple, TypedDict, overload, type_check_only
-from typing_extensions import Never, Self, TypeAlias, deprecated
+from typing import Any, Final, Literal, NamedTuple, TypeAlias, TypedDict, overload, type_check_only
+from typing_extensions import Never, Self, deprecated
 
 if sys.version_info >= (3, 13):
     from _ssl import HAS_PSK as HAS_PSK

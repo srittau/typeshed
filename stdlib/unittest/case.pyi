@@ -7,8 +7,21 @@ from collections.abc import Callable, Container, Iterable, Mapping, Sequence, Se
 from contextlib import AbstractContextManager
 from re import Pattern
 from types import GenericAlias, TracebackType
-from typing import Any, AnyStr, Final, Generic, NoReturn, Protocol, SupportsAbs, SupportsRound, TypeVar, overload, type_check_only
-from typing_extensions import Never, ParamSpec, Self
+from typing import (
+    Any,
+    AnyStr,
+    Final,
+    Generic,
+    NoReturn,
+    ParamSpec,
+    Protocol,
+    SupportsAbs,
+    SupportsRound,
+    TypeVar,
+    overload,
+    type_check_only,
+)
+from typing_extensions import Never, Self
 from unittest._log import _AssertLogsContext, _LoggingWatcher
 from warnings import WarningMessage
 

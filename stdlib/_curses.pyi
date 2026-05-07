@@ -1,8 +1,7 @@
 import sys
 from _typeshed import ReadOnlyBuffer, SupportsRead, SupportsWrite
 from curses import _ncurses_version
-from typing import Any, Final, final, overload
-from typing_extensions import TypeAlias
+from typing import Any, Final, TypeAlias, final, overload
 
 # NOTE: This module is ordinarily only available on Unix, but the windows-curses
 # package makes it available on Windows as well with the same contents.

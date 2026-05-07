@@ -18,11 +18,12 @@ from typing import (
     SupportsFloat,
     SupportsIndex,
     SupportsInt,
+    TypeAlias,
     TypeVar,
     final,
     overload,
 )
-from typing_extensions import Buffer, LiteralString, Self as _Self, TypeAlias
+from typing_extensions import Buffer, LiteralString, Self as _Self
 
 _KT = TypeVar("_KT")
 _KT_co = TypeVar("_KT_co", covariant=True)

@@ -1,7 +1,6 @@
 import sys
 from _typeshed import structseq
-from typing import Any, Final, Literal, Protocol, SupportsFloat, SupportsIndex, final, type_check_only
-from typing_extensions import TypeAlias
+from typing import Any, Final, Literal, Protocol, SupportsFloat, SupportsIndex, TypeAlias, final, type_check_only
 
 _TimeTuple: TypeAlias = tuple[int, int, int, int, int, int, int, int, int]
 

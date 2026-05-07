@@ -4,8 +4,8 @@ from _typeshed import FileDescriptorOrPath, Unused
 from abc import ABC, abstractmethod
 from collections.abc import AsyncGenerator, AsyncIterator, Awaitable, Callable, Generator, Iterator
 from types import TracebackType
-from typing import Any, Generic, Protocol, TypeVar, overload, runtime_checkable, type_check_only
-from typing_extensions import ParamSpec, Self, TypeAlias, deprecated
+from typing import Any, Generic, ParamSpec, Protocol, TypeAlias, TypeVar, overload, runtime_checkable, type_check_only
+from typing_extensions import Self, deprecated
 
 __all__ = [
     "contextmanager",

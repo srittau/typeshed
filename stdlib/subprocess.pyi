@@ -2,8 +2,8 @@ import sys
 from _typeshed import MaybeNone, ReadableBuffer, StrOrBytesPath
 from collections.abc import Callable, Collection, Iterable, Mapping, Sequence
 from types import GenericAlias, TracebackType
-from typing import IO, Any, AnyStr, Final, Generic, Literal, TypeVar, overload
-from typing_extensions import Self, TypeAlias
+from typing import IO, Any, AnyStr, Final, Generic, Literal, TypeAlias, TypeVar, overload
+from typing_extensions import Self
 
 __all__ = [
     "Popen",

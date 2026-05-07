@@ -2,8 +2,8 @@ import sys
 from _typeshed import ReadableBuffer, SupportsRead, SupportsWrite
 from collections.abc import Iterable, MutableSequence
 from types import GenericAlias
-from typing import Any, ClassVar, Literal, SupportsIndex, TypeVar, overload
-from typing_extensions import Self, TypeAlias, deprecated, disjoint_base
+from typing import Any, ClassVar, Literal, SupportsIndex, TypeAlias, TypeVar, overload
+from typing_extensions import Self, deprecated, disjoint_base
 
 _IntTypeCode: TypeAlias = Literal["b", "B", "h", "H", "i", "I", "l", "L", "q", "Q"]
 _FloatTypeCode: TypeAlias = Literal["f", "d"]

@@ -20,7 +20,7 @@ from types import (
     TracebackType,
     WrapperDescriptorType,
 )
-from typing_extensions import Never as _Never, ParamSpec as _ParamSpec, deprecated
+from typing_extensions import Never as _Never, deprecated
 
 if sys.version_info >= (3, 14):
     from _typeshed import EvaluateFunc
@@ -393,7 +393,7 @@ else:
     def NewType(name: str, tp: Any) -> Any: ...
 
 _F = TypeVar("_F", bound=Callable[..., Any])
-_P = _ParamSpec("_P")
+_P = ParamSpec("_P")
 _T = TypeVar("_T")
 
 _FT = TypeVar("_FT", bound=Callable[..., Any] | type)

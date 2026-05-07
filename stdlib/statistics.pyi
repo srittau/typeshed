@@ -3,8 +3,8 @@ from _typeshed import SupportsRichComparisonT
 from collections.abc import Callable, Hashable, Iterable, Sequence, Sized
 from decimal import Decimal
 from fractions import Fraction
-from typing import Literal, NamedTuple, Protocol, SupportsFloat, SupportsIndex, TypeVar, type_check_only
-from typing_extensions import Self, TypeAlias
+from typing import Literal, NamedTuple, Protocol, SupportsFloat, SupportsIndex, TypeAlias, TypeVar, type_check_only
+from typing_extensions import Self
 
 __all__ = [
     "StatisticsError",

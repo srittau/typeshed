@@ -7,8 +7,8 @@ from re import Pattern
 from string import Template
 from time import struct_time
 from types import FrameType, GenericAlias, TracebackType
-from typing import Any, ClassVar, Final, Generic, Literal, Protocol, TextIO, TypeVar, overload, type_check_only
-from typing_extensions import Self, TypeAlias, deprecated
+from typing import Any, ClassVar, Final, Generic, Literal, Protocol, TextIO, TypeAlias, TypeVar, overload, type_check_only
+from typing_extensions import Self, deprecated
 
 __all__ = [
     "BASIC_FORMAT",

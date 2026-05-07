@@ -1,8 +1,7 @@
 import sys
 from _typeshed import ReadableBuffer
 from collections.abc import Mapping
-from typing import Any, Final, Literal, overload
-from typing_extensions import TypeAlias
+from typing import Any, Final, Literal, TypeAlias, overload
 from xml.sax import _Source, xmlreader
 from xml.sax.handler import _ContentHandlerProtocol
 

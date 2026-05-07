@@ -2,8 +2,8 @@ import sys
 from _typeshed import AnyStr_co, StrOrBytesPath
 from collections.abc import Callable, Iterable
 from types import GenericAlias, TracebackType
-from typing import IO, Any, AnyStr, Generic, Literal, Protocol, overload, type_check_only
-from typing_extensions import Self, TypeAlias, deprecated
+from typing import IO, Any, AnyStr, Generic, Literal, Protocol, TypeAlias, overload, type_check_only
+from typing_extensions import Self, deprecated
 
 __all__ = [
     "input",

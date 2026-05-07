@@ -5,8 +5,8 @@ from collections import OrderedDict
 from collections.abc import Callable, Generator, Iterable, Sequence
 from contextlib import contextmanager
 from re import Pattern
-from typing import Any, ClassVar, Literal, NamedTuple, Protocol, TypeVar, overload, type_check_only
-from typing_extensions import Self, TypeAlias
+from typing import Any, ClassVar, Literal, NamedTuple, Protocol, TypeAlias, TypeVar, overload, type_check_only
+from typing_extensions import Self
 
 if sys.version_info >= (3, 10):
     from types import EllipsisType

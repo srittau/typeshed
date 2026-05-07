@@ -3,8 +3,8 @@ import sys
 from _typeshed import ReadableBuffer, StrPath
 from collections.abc import Awaitable, Callable, Iterable, Sequence, Sized
 from types import ModuleType
-from typing import Any, Protocol, SupportsIndex, type_check_only
-from typing_extensions import Self, TypeAlias
+from typing import Any, Protocol, SupportsIndex, TypeAlias, type_check_only
+from typing_extensions import Self
 
 from . import events, protocols, transports
 from .base_events import Server

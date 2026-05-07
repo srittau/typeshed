@@ -8,8 +8,8 @@ from inspect import _SourceObjectType
 from linecache import _ModuleGlobals
 from rlcompleter import Completer
 from types import CodeType, FrameType, TracebackType
-from typing import IO, Any, ClassVar, Final, Literal, TypeVar
-from typing_extensions import ParamSpec, Self, TypeAlias, deprecated
+from typing import IO, Any, ClassVar, Final, Literal, ParamSpec, TypeAlias, TypeVar
+from typing_extensions import Self, deprecated
 
 __all__ = ["run", "pm", "Pdb", "runeval", "runctx", "runcall", "set_trace", "post_mortem", "help"]
 if sys.version_info >= (3, 14):

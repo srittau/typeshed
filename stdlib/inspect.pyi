@@ -25,8 +25,21 @@ from types import (
     TracebackType,
     WrapperDescriptorType,
 )
-from typing import Any, ClassVar, Final, Literal, NamedTuple, Protocol, TypeVar, overload, type_check_only
-from typing_extensions import ParamSpec, Self, TypeAlias, TypeGuard, TypeIs, deprecated, disjoint_base
+from typing import (
+    Any,
+    ClassVar,
+    Final,
+    Literal,
+    NamedTuple,
+    ParamSpec,
+    Protocol,
+    TypeAlias,
+    TypeGuard,
+    TypeVar,
+    overload,
+    type_check_only,
+)
+from typing_extensions import Self, TypeIs, deprecated, disjoint_base
 
 if sys.version_info >= (3, 14):
     from annotationlib import Format

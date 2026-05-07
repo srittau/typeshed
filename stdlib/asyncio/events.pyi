@@ -12,8 +12,8 @@ from collections.abc import Callable, Sequence
 from concurrent.futures import Executor
 from contextvars import Context
 from socket import AddressFamily, AddressInfo, SocketKind, _Address, _RetAddress, socket
-from typing import IO, Any, Literal, Protocol, TypeVar, overload, type_check_only
-from typing_extensions import Self, TypeAlias, TypeVarTuple, Unpack, deprecated
+from typing import IO, Any, Literal, Protocol, TypeAlias, TypeVar, overload, type_check_only
+from typing_extensions import Self, TypeVarTuple, Unpack, deprecated
 
 from . import _AwaitableLike, _CoroutineLike
 from .base_events import Server

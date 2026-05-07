@@ -3,8 +3,8 @@ from _curses import *
 from _curses import window as window
 from _typeshed import structseq
 from collections.abc import Callable
-from typing import Final, TypeVar, final, type_check_only
-from typing_extensions import Concatenate, ParamSpec
+from typing import Final, ParamSpec, TypeVar, final, type_check_only
+from typing_extensions import Concatenate
 
 # NOTE: The _curses module is ordinarily only available on Unix, but the
 # windows-curses package makes it available on Windows as well with the same

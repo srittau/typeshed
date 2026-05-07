@@ -1,8 +1,7 @@
 import sys
 import time
 from collections.abc import Callable
-from typing import Any, ClassVar, NamedTuple, type_check_only
-from typing_extensions import TypeAlias
+from typing import Any, ClassVar, NamedTuple, TypeAlias, type_check_only
 
 __all__ = ["scheduler"]
 

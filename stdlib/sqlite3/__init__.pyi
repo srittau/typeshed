@@ -62,8 +62,8 @@ from sqlite3.dbapi2 import (
     threadsafety as threadsafety,
 )
 from types import TracebackType
-from typing import Any, Literal, Protocol, SupportsIndex, TypeVar, final, overload, type_check_only
-from typing_extensions import Self, TypeAlias, disjoint_base
+from typing import Any, Literal, Protocol, SupportsIndex, TypeAlias, TypeVar, final, overload, type_check_only
+from typing_extensions import Self, disjoint_base
 
 if sys.version_info < (3, 14):
     from sqlite3.dbapi2 import version_info as version_info

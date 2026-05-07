@@ -18,8 +18,8 @@ from sqlite3 import (
     Warning as Warning,
     _IsolationLevel,
 )
-from typing import Any, Final, Literal, TypeVar, overload
-from typing_extensions import TypeAlias, deprecated
+from typing import Any, Final, Literal, TypeAlias, TypeVar, overload
+from typing_extensions import deprecated
 
 if sys.version_info >= (3, 11):
     from sqlite3 import Blob as Blob

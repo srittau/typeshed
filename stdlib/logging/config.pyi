@@ -4,8 +4,8 @@ from collections.abc import Callable, Hashable, Iterable, Mapping, Sequence
 from configparser import RawConfigParser
 from re import Pattern
 from threading import Thread
-from typing import IO, Any, Final, Literal, SupportsIndex, TypedDict, overload, type_check_only
-from typing_extensions import Required, TypeAlias, disjoint_base
+from typing import IO, Any, Final, Literal, SupportsIndex, TypeAlias, TypedDict, overload, type_check_only
+from typing_extensions import Required, disjoint_base
 
 from . import Filter, Filterer, Formatter, Handler, Logger, _FilterType, _FormatStyle, _Level
 

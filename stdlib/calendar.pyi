@@ -4,8 +4,7 @@ import sys
 from _typeshed import Unused
 from collections.abc import Iterable, Sequence
 from time import struct_time
-from typing import ClassVar, Final
-from typing_extensions import TypeAlias
+from typing import ClassVar, Final, TypeAlias
 
 __all__ = [
     "IllegalMonthError",

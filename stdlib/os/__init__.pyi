@@ -35,13 +35,14 @@ from typing import (
     Literal,
     NoReturn,
     Protocol,
+    TypeAlias,
     TypeVar,
     final,
     overload,
     runtime_checkable,
     type_check_only,
 )
-from typing_extensions import LiteralString, Self, TypeAlias, Unpack, deprecated
+from typing_extensions import LiteralString, Self, Unpack, deprecated
 
 from . import path as _path
 

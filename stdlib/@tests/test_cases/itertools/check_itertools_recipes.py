@@ -22,11 +22,12 @@ from typing import (
     Sequence,
     Tuple,
     Type,
+    TypeAlias,
     TypeVar,
     Union,
     overload,
 )
-from typing_extensions import TypeAlias, TypeVarTuple, Unpack
+from typing_extensions import TypeVarTuple, Unpack
 
 _T = TypeVar("_T")
 _T1 = TypeVar("_T1")

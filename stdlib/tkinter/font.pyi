@@ -2,8 +2,8 @@ import _tkinter
 import itertools
 import sys
 import tkinter
-from typing import Any, ClassVar, Final, Literal, TypedDict, overload, type_check_only
-from typing_extensions import TypeAlias, Unpack
+from typing import Any, ClassVar, Final, Literal, TypeAlias, TypedDict, overload, type_check_only
+from typing_extensions import Unpack
 
 __all__ = ["NORMAL", "ROMAN", "BOLD", "ITALIC", "nametofont", "Font", "families", "names"]
 

@@ -2,8 +2,8 @@ import sys
 from _typeshed import SupportsWrite, Unused
 from collections.abc import Generator, Iterable, Iterator, Mapping
 from types import FrameType, TracebackType
-from typing import Any, ClassVar, Literal, SupportsIndex, overload
-from typing_extensions import Self, TypeAlias, deprecated
+from typing import Any, ClassVar, Literal, SupportsIndex, TypeAlias, overload
+from typing_extensions import Self, deprecated
 
 __all__ = [
     "extract_stack",
