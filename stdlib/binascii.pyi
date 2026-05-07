@@ -1,5 +1,6 @@
 import sys
-from _typeshed import ReadableBuffer, TypeAlias
+from _typeshed import ReadableBuffer
+from typing import TypeAlias
 from typing_extensions import deprecated
 
 # Many functions in binascii accept buffer objects
