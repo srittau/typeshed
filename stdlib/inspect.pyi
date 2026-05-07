@@ -332,7 +332,7 @@ if sys.version_info >= (3, 14):
         annotation_format: Format = Format.VALUE,  # noqa: Y011
     ) -> Signature: ...
 
-elif sys.version_info >= (3, 10):
+else:
     def signature(
         obj: _IntrospectableCallable,
         *,
@@ -341,9 +341,6 @@ elif sys.version_info >= (3, 10):
         locals: Mapping[str, Any] | None = None,
         eval_str: bool = False,
     ) -> Signature: ...
-
-else:
-    def signature(obj: _IntrospectableCallable, *, follow_wrapped: bool = True) -> Signature: ...
 
 class _void: ...
 class _empty: ...
@@ -374,7 +371,7 @@ class Signature:
             eval_str: bool = False,
             annotation_format: Format = Format.VALUE,  # noqa: Y011
         ) -> Self: ...
-    elif sys.version_info >= (3, 10):
+    else:
         @classmethod
         def from_callable(
             cls,
@@ -385,9 +382,6 @@ class Signature:
             locals: Mapping[str, Any] | None = None,
             eval_str: bool = False,
         ) -> Self: ...
-    else:
-        @classmethod
-        def from_callable(cls, obj: _IntrospectableCallable, *, follow_wrapped: bool = True) -> Self: ...
     if sys.version_info >= (3, 14):
         def format(self, *, max_width: int | None = None, quote_annotation_strings: bool = True) -> str: ...
     elif sys.version_info >= (3, 13):
@@ -398,7 +392,7 @@ class Signature:
 
 if sys.version_info >= (3, 14):
     from annotationlib import get_annotations as get_annotations
-elif sys.version_info >= (3, 10):
+else:
     def get_annotations(
         obj: Callable[..., object] | type[object] | ModuleType,  # any callable, class, or module
         *,
