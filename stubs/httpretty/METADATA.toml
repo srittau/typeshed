@@ -1,6 +1,7 @@
 version = "1.1.4"
 upstream-repository = "https://github.com/gabrielfalcao/HTTPretty"
 partial-stub = true
+stub-distribution = "types-httpretty-ts"
 
 [tool.stubtest]
 ignore-missing-stub = true
